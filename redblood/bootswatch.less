@@ -1,0 +1,100 @@
+// Simplex 3.0.0
+// Bootswatch
+// -----------------------------------------------------
+
+@import url("//fonts.googleapis.com/css?family=Lato:400,700,900,400italic");@import url("//fonts.googleapis.com/css?family=Ubuntu:300,400,700");
+
+.btn-shadow(@color) {
+	#gradient > .vertical-three-colors(lighten(@color, 15%), @color, 6%, darken(@color, 4%));
+	border: 1px solid darken(@color, 10%);
+}
+
+// Navbar =====================================================================
+
+.navbar {
+	border-bottom: 1px solid #dfdfdf;
+	font-family: @font-family-alt;
+
+	&-nav > li > a {
+		padding-top: @navbar-padding-vertical + 2px;
+		padding-bottom: @navbar-padding-vertical - 2px;
+	}
+
+	&-brand {
+		padding: 14px 15px 8px;
+	}
+}
+
+// Buttons ====================================================================
+
+.btn:active {
+	.box-shadow(none);
+}
+
+.btn-group.open .dropdown-toggle {
+	.box-shadow(none);
+}
+
+// Typography =================================================================
+
+@font-family-alt: "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: @font-family-alt;
+}
+
+// Tables =====================================================================
+
+// Forms ======================================================================
+
+.has-warning {
+	.help-block,
+	.control-label {
+		color: @brand-danger;
+	}
+
+	.form-control,
+	.form-control:focus {
+		border-color: @brand-danger;
+	}
+}
+
+.has-error {
+	.help-block,
+	.control-label {
+		color: @brand-primary;
+	}
+
+	.form-control,
+	.form-control:focus {
+		border-color: @brand-primary;
+	}
+}
+
+.has-success {
+	.help-block,
+	.control-label {
+		color: @brand-success;
+	}
+
+	.form-control,
+	.form-control:focus {
+		border-color: @brand-success;
+	}
+}
+
+// Navs =======================================================================
+
+.pagination {
+
+	.active > a,
+	.active > a:hover {
+		border-color: #ddd;
+	}
+}
+
+// Indicators =================================================================
+
+// Progress bars ==============================================================
+
+// Containers =================================================================
